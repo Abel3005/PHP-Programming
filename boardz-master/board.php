@@ -8,7 +8,7 @@ mysql_select_db("kdg_db", $connect);
 // sql 쿼리 string 생성
 if($_GET[mode]=='search')
 {
-    $sql = "select * from boardz where title like '%$_POST[ab]%'";
+    $sql = "select * from boardz where title like '%$_POST[search]%'";
 }
 else {
     $sql = "select * from boardz";
@@ -52,7 +52,7 @@ $row = mysql_fetch_array($result);
                 <h2>Beautiful <strong>Boardz</strong></h2>
                 <div style="display: block; width: 50%; margin-right: auto; margin-left: auto; position: relative;">
                     <form class="example" action="board.php?mode=search" method ="post">
-                        <input type="text" placeholder="Search.." name="ab">
+                        <input type="text" placeholder="Search.." name="search">
                         <button type="submit"><i class="fa fa-search"></i></button>
                     </form>
                 </div>
