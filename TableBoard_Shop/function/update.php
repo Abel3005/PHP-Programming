@@ -16,13 +16,13 @@
 
 
 # 참고 : 에러 메시지 출력 방법
-if(!result) {
+if(!$result) {
     echo "<script> alert('update - error message') </script>";
 }
 
 ?>
 <script>
-    location.replace('../index.php');
+     location.replace('../index.php');
 </script>
 
 
