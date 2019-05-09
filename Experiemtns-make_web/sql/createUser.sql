@@ -1,0 +1,2 @@
+create table user(id varchar(25), pw varchar(25), name varchar(10), gender int, email varchar(100), phone varchar(12), primary key (id));
+create table gallery( user_id varchar(25), image_big_url varchar(100), imae_thumbs_url varchar(100), description varchar(150), title varchar(25), primary key(user_id)); 
