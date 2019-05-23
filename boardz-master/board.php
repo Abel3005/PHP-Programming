@@ -63,8 +63,8 @@ $row = mysql_fetch_array($result);
             $num = mysql_num_rows($result);
                 echo (" <div class=\"boardz centered-block beautiful\">
                 <ul>");
-                    for($i=1; $i <=($num/3 + ($num%3 >= 1 ? 1 : 0));$i++){
-                        echo ("<li>
+            for($i=1; $i <= ($num/3 + ($num%3 >= 1 ? 1 : 0));$i++){
+                echo ("<li>
                         <h1>$row[title]</h1>
                         <img src=$row[image_url] alt=\"demo image\"/>
                     </li>");
